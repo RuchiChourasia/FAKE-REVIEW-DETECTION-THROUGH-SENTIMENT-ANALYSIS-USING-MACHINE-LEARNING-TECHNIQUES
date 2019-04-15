@@ -10,6 +10,16 @@ Step-By-Step Explanation of Detection of Fake Review.
 3. Changed the Label from __label1__ to FAKE and __label2__ to REAL.
 4. Splitting Dataset for Training and Testing.
 
+# First algorithm is Naive Bayes
+Naive Bayes Classifier from scratch,for prediction of label to review. Naive Bayes is a Supervised Machine Learning Algorithm so it takes set of pre labeled data as input for training purpose and after training it predicts label for new unlabeled test input based on training.
+
+This part mainly contain functions which are as mention:
+
+preprocess() for text preprocessing which include extracting important features , tokenization, lemmetization and bigram creation then it append the new text into one list which is used as input. split() for spliting whole dataset into training and test set. trainclassifier() for training of classifier predict() for prediction of labels to new unlabeled data crossvalidation() for 10 fold cross validation for improving accuracy of classifier
+
+At the end I have created Accuracy(), Precision() , Recall() and F1_score() functions for calculation of evaluation parameter
+
+# Second algorithm is SVM
 Training the Model using Train Dataset:
 1. Parsing the datas from the Train set which are required.
 2. Pre-processing the Text Data in the Train set by removing Stop-words and punctuations and Lemmatizing the tokens. 
